@@ -266,3 +266,26 @@ footer p {
     width: 24px;
     margin: 10px 5px 0 5px;
 }
+
+
+@media (min-width: 500px) {
+
+    header {
+        padding: 0 5% 10px 5%;
+    }
+
+    .main {
+        padding: 0 10%;
+    }
+
+    .infoBlock {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .infoBlockBox {
+        width: 40%;
+    }
+
+}
