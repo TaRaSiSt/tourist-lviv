@@ -182,15 +182,15 @@ select:focus {
     margin-bottom: 50px;
 }
 
-.productCard>a {
+.productCard>div>a {
     margin-bottom: 20px;
 }
 
-.productCard>p {
+.productCard>div>p {
     margin: 10px 0;
 }
 
-.productCard>img {
+.productCard>div>img {
     width: 390px;
     height: 260px;
     object-fit: cover;
@@ -249,10 +249,10 @@ footer a {
 }
 
 footer p {
-    font-size: 10px;
+    font-size: 18px;
 }
 
-.footerNav>div {
+.footerBox>.footerLinks {
     padding: 15px 0;
     display: flex;
     flex-direction: column;
@@ -267,6 +267,24 @@ footer p {
     margin: 10px 5px 0 5px;
 }
 
+.footerBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerContact {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.footerDesc>p {
+    font-size: 10px;
+}
 
 @media (min-width: 500px) {
 
@@ -288,4 +306,15 @@ footer p {
         width: 40%;
     }
 
+    .productCard {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+}
+
+.footerBox {
+    display: flex;
+    flex-direction: column;
 }

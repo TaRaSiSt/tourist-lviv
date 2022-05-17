@@ -84,7 +84,8 @@
         for (const card of cards) {
             cardsContainer.innerHTML += `
             <div class="productCard">
-                        <img src="${card.image}" alt="">
+                        <div><img src="${card.image}" alt=""></div>
+                        <div>
                         <h3>${card.title}</h3>
                             <p>${card.description}</p>
                             <div class="product-info">
@@ -100,17 +101,17 @@
                                 <div class="product__type-element" data-sb-curent-price="${card.childPrice}"
                                     data-sb-curent-size="дитячий" data-sb-curent-id-or-vendor-code="${card.childId}">Дитячий</div>
                             </div>
-                            <br>
                             <div class="product__quantity"></div>
                             <div>
                                 <a class="productCardButton" data-sb-id-or-vendor-code="${card.productId}"
                                     data-sb-product-name = "${card.title}: "
                                     data-sb-product-price = "${card.price}"
-                                    data-sb-product-quantity = "2"
+                                    data-sb-product-quantity = "1"
                                     data-sb-product-img = "${card.image}"
                                     href = "#" >
                                     Забронювати</a>
                             </div>
+                        </div>
                     </div>
             `
         }

@@ -85,7 +85,8 @@
         for (const card of cards) {
             cardsContainer.innerHTML += `
             <div class="productCard">
-                        <img src="${card.image}" alt="">
+                        <div><img src="${card.image}" alt=""></div>
+                        <div>
                         <h3>${card.title}</h3>
                             <p>${card.description}</p>
                             <div class="product-info">
@@ -111,6 +112,7 @@
                                     href = "#" >
                                     Забронювати</a>
                             </div>
+                        </div>
                     </div>
             `
         }
