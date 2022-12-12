@@ -10,7 +10,6 @@ header {
     background-image: url(img/lviv.png);
     background-position: center;
     background-attachment: fixed;
-    /* background: fixed; */
     background-size: cover;
     padding: 30px 30px 5px 30px;
 }
